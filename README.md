@@ -6,6 +6,8 @@ A geometric sans-serif inspired by the design principles of Walter Gropius and t
 
 **Accessibility:** Ise Grotesk is a *display* face (24pt and up). Turn on `ss02` (Clear) for tailed l, slab I, slashed zero and spurred b d p q. Accented capitals sit above cap height, so use generous line spacing. Check text/background contrast (WCAG 4.5:1 minimum).
 
+**[Try it in your browser: browse every character and type your own text](https://katejtownsend.github.io/ise-grotesk/)**
+
 ![uppercase specimen](docs/specimen.png)
 
 ![language coverage](docs/specimen_lang.png)
@@ -22,6 +24,7 @@ Ise Gropius (1897-1983), born Ilse Frank, was known as "Frau Bauhaus." She worke
 - `sources/`: editable font sources (UFO)
 - `scripts/make_glyphs.py`: generates glyphs from the grid (A-Z, a-z, 0-9, punctuation, spacing table and kerning)
 - `release/`: the fonts, as TTF, OTF and WOFF2
+- `docs/index.html`: the live demo page (glyph viewer), published with GitHub Pages
 - `docs/WHIMSY_LETTERS.md`: the stories behind the story letters (A, H, I, W, Z, 5, i, w, &)
 
 ## Build
