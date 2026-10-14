@@ -1,10 +1,10 @@
 """Build docs/glyph-viewer.html: every character in every style, with ss01/ss02 toggles. Fonts are embedded, so the file works offline.
 python scripts/make_viewer.py   (run ./build_all.sh first)"""
-import base64, json, unicodedata
+import base64, json, os, unicodedata
 from fontTools.ttLib import TTFont
 STYLES = [("Regular", "IseGrotesk-Regular", 400, "normal"), ("Italic", "IseGrotesk-Italic", 400, "italic"),
           ("Bold", "IseGrotesk-Bold", 700, "normal"), ("Bold Italic", "IseGrotesk-BoldItalic", 700, "italic")]
-f = TTFont("fonts/IseGrotesk-Regular.ttf"); cmap = f.getBestCmap()
+f = TTFont(os.environ.get("ISE_FONTDIR","fonts")+"/IseGrotesk-Regular.ttf"); cmap = f.getBestCmap()
 def group(u):
     c = chr(u); cat = unicodedata.category(c)
     if c.isalpha() and u < 0x80: return "Uppercase" if c.isupper() else "Lowercase"
@@ -17,7 +17,7 @@ groups = {k: [] for k in order}
 for u in sorted(cmap):
     g = group(u)
     if g in groups: groups[g].append([u, unicodedata.name(chr(u), cmap[u])])
-faces = "".join(f"@font-face{{font-family:'Ise';src:url(data:font/ttf;base64,{base64.b64encode(open(f'fonts/{fn}.ttf','rb').read()).decode()}) format('truetype');font-weight:{w};font-style:{st}}}\n" for _, fn, w, st in STYLES)
+faces = "".join(f"@font-face{{font-family:'Ise';src:url(data:font/ttf;base64,{base64.b64encode(open(os.environ.get('ISE_FONTDIR','fonts')+f'/{fn}.ttf','rb').read()).decode()}) format('truetype');font-weight:{w};font-style:{st}}}\n" for _, fn, w, st in STYLES)
 html = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ise Grotesk glyph viewer</title><style>
 %FACES%
 :root{--bg:#fff;--fg:#111;--mut:#777;--line:#ddd;--acc:#d3342c}
@@ -71,4 +71,4 @@ find.oninput=()=>{const q=find.value;if(!q)return;const c=[...document.querySele
 [ss01,ss02,size].forEach(e=>e.oninput=apply);apply();
 </script></body></html>"""
 html = html.replace("%FACES%", faces).replace("%STYLES%", json.dumps([[s[0], s[1], s[2], s[3]] for s in STYLES])).replace("%GROUPS%", json.dumps(groups)).replace("%ORDER%", json.dumps(order))
-open("docs/glyph-viewer.html", "w").write(html); print("wrote docs/glyph-viewer.html", len(html) // 1024, "KB;", {k: len(v) for k, v in groups.items()})
+open(os.environ.get("ISE_OUT","docs/glyph-viewer.html"), "w").write(html); print("wrote docs/glyph-viewer.html", len(html) // 1024, "KB;", {k: len(v) for k, v in groups.items()})

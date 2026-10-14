@@ -14,5 +14,6 @@ ARCHIVE/
 **/ARCHIVE-*
 docs/*
 !docs/WHIMSY_LETTERS.md
+!docs/index.html
 !docs/specimen.png
 !docs/specimen_lang.png
