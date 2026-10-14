@@ -1,0 +1,18 @@
+# tools and build leftovers
+.venv/
+__pycache__/
+.DS_Store
+fonts/
+release/build/
+release/fontbakery-report.html
+release/IseGrotesk-*/
+release/*.zip
+*.zip
+
+# private working files: archives and internal docs
+ARCHIVE/
+**/ARCHIVE-*
+docs/*
+!docs/WHIMSY_LETTERS.md
+!docs/specimen.png
+!docs/specimen_lang.png

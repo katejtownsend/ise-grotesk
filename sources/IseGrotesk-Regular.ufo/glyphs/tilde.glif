@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tilde" format="2">
+  <advance width="460"/>
+  <unicode hex="02DC"/>
+  <outline>
+    <contour>
+      <point x="260.0" y="630.0" type="line"/>
+      <point x="260.0" y="668.6599324881555"/>
+      <point x="228.65993248815553" y="700.0"/>
+      <point x="190.0" y="700.0" type="curve" smooth="yes"/>
+      <point x="151.34006751184447" y="700.0"/>
+      <point x="120.0" y="668.6599324881555"/>
+      <point x="120.0" y="630.0" type="curve"/>
+      <point x="180.0" y="630.0" type="line"/>
+      <point x="180.0" y="635.5228474983079"/>
+      <point x="184.47715250169207" y="640.0"/>
+      <point x="190.0" y="640.0" type="curve" smooth="yes"/>
+      <point x="195.52284749830793" y="640.0"/>
+      <point x="200.0" y="635.5228474983079"/>
+      <point x="200.0" y="630.0" type="curve"/>
+    </contour>
+    <contour>
+      <point x="200.0" y="630.0" type="line"/>
+      <point x="200.0" y="591.3400675118445"/>
+      <point x="231.34006751184447" y="560.0"/>
+      <point x="270.0" y="560.0" type="curve" smooth="yes"/>
+      <point x="308.65993248815556" y="560.0"/>
+      <point x="340.0" y="591.3400675118445"/>
+      <point x="340.0" y="630.0" type="curve"/>
+      <point x="280.0" y="630.0" type="line"/>
+      <point x="280.0" y="624.4771525016921"/>
+      <point x="275.52284749830795" y="620.0"/>
+      <point x="270.0" y="620.0" type="curve" smooth="yes"/>
+      <point x="264.47715250169205" y="620.0"/>
+      <point x="260.0" y="624.4771525016921"/>
+      <point x="260.0" y="630.0" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

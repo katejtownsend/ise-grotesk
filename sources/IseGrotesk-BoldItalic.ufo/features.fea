@@ -1,0 +1,51 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature ss01 {
+    featureNames { name "Logic: plain forms of the whimsy letters"; };
+    sub A by A.ss01;
+    sub H by H.ss01;
+    sub I by I.ss01;
+    sub W by W.ss01;
+    sub Z by Z.ss01;
+    sub five by five.ss01;
+    sub i by i.ss01;
+    sub w by w.ss01;
+    sub uni00C0 by uni00C0.ss01;
+    sub uni00C1 by uni00C1.ss01;
+    sub uni00C2 by uni00C2.ss01;
+    sub uni00C3 by uni00C3.ss01;
+    sub uni00C4 by uni00C4.ss01;
+    sub uni00C5 by uni00C5.ss01;
+    sub uni00CC by uni00CC.ss01;
+    sub uni00CD by uni00CD.ss01;
+    sub uni00CE by uni00CE.ss01;
+    sub uni00CF by uni00CF.ss01;
+    sub uni00EC by uni00EC.ss01;
+    sub uni00ED by uni00ED.ss01;
+    sub uni00EE by uni00EE.ss01;
+    sub uni00EF by uni00EF.ss01;
+    sub uni0100 by uni0100.ss01;
+    sub uni0102 by uni0102.ss01;
+    sub uni0104 by uni0104.ss01;
+    sub uni012A by uni012A.ss01;
+    sub uni012B by uni012B.ss01;
+    sub uni012E by uni012E.ss01;
+    sub uni0130 by uni0130.ss01;
+    sub uni0174 by uni0174.ss01;
+    sub uni0175 by uni0175.ss01;
+    sub uni0179 by uni0179.ss01;
+    sub uni017B by uni017B.ss01;
+    sub uni017D by uni017D.ss01;
+} ss01;
+
+feature ss02 {
+    featureNames { name "Clear: distinct forms for look-alike letters"; };
+    sub l by l.ss02;
+    sub I by I.ss02;
+    sub zero by zero.ss02;
+    sub b by b.ss02;
+    sub d by d.ss02;
+    sub p by p.ss02;
+    sub q by q.ss02;
+} ss02;

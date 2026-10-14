@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni00EC" format="2">
+  <advance width="348"/>
+  <unicode hex="00EC"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="grave.lc" xOffset="-56.0"/>
+  </outline>
+</glyph>
