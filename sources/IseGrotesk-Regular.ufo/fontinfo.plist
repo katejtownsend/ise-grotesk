@@ -7,7 +7,7 @@
     <key>capHeight</key>
     <integer>700</integer>
     <key>copyright</key>
-    <string>Copyright 2026 The Ise Grotesk Project Authors (https://github.com/katejtownsend/ise-grotesk)</string>
+    <string>Copyright 2026 The Ise Grotesk Project Authors (https://github.com/katejtownsend/ise-grotesk), with Reserved Font Name 'Ise Grotesk'.</string>
     <key>descender</key>
     <integer>-300</integer>
     <key>familyName</key>
@@ -34,12 +34,16 @@
     <array>
       <integer>7</integer>
     </array>
+    <key>openTypeOS2Type</key>
+    <array/>
     <key>openTypeOS2TypoAscender</key>
     <integer>1000</integer>
     <key>openTypeOS2TypoDescender</key>
     <integer>-300</integer>
     <key>openTypeOS2TypoLineGap</key>
     <integer>0</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>KTWN</string>
     <key>openTypeOS2WeightClass</key>
     <integer>400</integer>
     <key>openTypeOS2WinAscent</key>

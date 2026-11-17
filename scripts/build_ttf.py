@@ -34,7 +34,7 @@ class _GS:
 names, cmap, adv = [], {}, {}
 for n in gs.keys():
     g = G(); g.unicodes = []; gs.readGlyph(n, g)
-    names.append(n); adv[n] = g.width
+    names.append(n); adv[n] = getattr(g, "width", 0)   # a zero-width glyph (the zero-width space) has no advance record in the UFO
     for u in g.unicodes: cmap[u] = n
 order = [".notdef"] + sorted(names, key=lambda n: (n != "space", n))
 adv[".notdef"] = 500

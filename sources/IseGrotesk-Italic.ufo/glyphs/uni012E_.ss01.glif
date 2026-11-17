@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni012E.ss01" format="2">
   <advance width="280"/>
+  <anchor x="289" y="700" name="top"/>
   <outline>
     <component base="I.ss01"/>
     <component base="ogonek" xOffset="-95.0"/>

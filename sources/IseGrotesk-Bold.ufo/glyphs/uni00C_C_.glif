@@ -2,6 +2,8 @@
 <glyph name="uni00CC" format="2">
   <advance width="390"/>
   <unicode hex="00CC"/>
+  <anchor x="195" y="900" name="top"/>
+  <anchor x="195" y="0" name="bottom"/>
   <outline>
     <component base="I"/>
     <component base="grave.lc" xOffset="-35.0" yOffset="200"/>

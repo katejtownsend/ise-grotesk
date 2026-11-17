@@ -2,6 +2,8 @@
 <glyph name="uni010C" format="2">
   <advance width="720"/>
   <unicode hex="010C"/>
+  <anchor x="561" y="900" name="top"/>
+  <anchor x="370" y="0" name="bottom"/>
   <outline>
     <component base="C"/>
     <component base="caron.lc" xOffset="182.51131233400443" yOffset="200"/>

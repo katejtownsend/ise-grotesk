@@ -2,6 +2,8 @@
 <glyph name="uni0177" format="2">
   <advance width="560"/>
   <unicode hex="0177"/>
+  <anchor x="429" y="700" name="top"/>
+  <anchor x="280" y="0" name="bottom"/>
   <outline>
     <component base="y"/>
     <component base="circumflex.lc" xOffset="50.0"/>

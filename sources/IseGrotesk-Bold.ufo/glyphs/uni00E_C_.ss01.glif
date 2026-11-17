@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni00EC.ss01" format="2">
   <advance width="330"/>
+  <anchor x="165" y="700" name="top"/>
+  <anchor x="165" y="0" name="bottom"/>
   <outline>
     <component base="dotlessi.ss01"/>
     <component base="grave.lc" xOffset="-65.0"/>

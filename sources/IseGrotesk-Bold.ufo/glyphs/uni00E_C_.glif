@@ -2,6 +2,8 @@
 <glyph name="uni00EC" format="2">
   <advance width="348"/>
   <unicode hex="00EC"/>
+  <anchor x="174" y="700" name="top"/>
+  <anchor x="174" y="0" name="bottom"/>
   <outline>
     <component base="dotlessi"/>
     <component base="grave.lc" xOffset="-56.0"/>

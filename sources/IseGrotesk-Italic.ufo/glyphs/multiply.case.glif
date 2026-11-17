@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="multiply.case" format="2">
+  <advance width="520.0"/>
+  <outline>
+    <contour>
+      <point x="168.2260764695031" y="154.64466094067262" type="line"/>
+      <point x="556.2441762039102" y="474.6446609406726" type="line"/>
+      <point x="500.5635166995124" y="545.3553390593274" type="line"/>
+      <point x="112.54541696510529" y="225.35533905932738" type="line"/>
+    </contour>
+    <contour>
+      <point x="165.53349808525545" y="474.6446609406726" type="line"/>
+      <point x="417.5153983508484" y="154.64466094067262" type="line"/>
+      <point x="503.25609508376004" y="225.35533905932738" type="line"/>
+      <point x="251.27419481816713" y="545.3553390593274" type="line"/>
+    </contour>
+  </outline>
+</glyph>

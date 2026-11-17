@@ -2,6 +2,8 @@
 <glyph name="uni016E" format="2">
   <advance width="720"/>
   <unicode hex="016E"/>
+  <anchor x="360" y="900" name="top"/>
+  <anchor x="360" y="0" name="bottom"/>
   <outline>
     <component base="U"/>
     <component base="ring" xOffset="130.0" yOffset="200"/>

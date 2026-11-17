@@ -2,6 +2,7 @@
 <glyph name="uni00E7" format="2">
   <advance width="540"/>
   <unicode hex="00E7"/>
+  <anchor x="280" y="500" name="top"/>
   <outline>
     <component base="c"/>
     <component base="cedilla" xOffset="50.0"/>

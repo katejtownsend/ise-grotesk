@@ -31,4 +31,6 @@ python3 scripts/postprocess.py "$OUT"/ttf/*.ttf "$OUT"/otf/*.otf
 for f in "$OUT"/ttf/*.ttf; do
   python3 -c "from fontTools.ttLib import TTFont; import sys; f=TTFont(sys.argv[1]); f.flavor='woff2'; f.save(sys.argv[2])" "$f" "$OUT/woff2/$(basename "${f%.ttf}").woff2"
 done
-echo "Done. Fonts are in $OUT/ttf, $OUT/otf, $OUT/woff2"
+# 5. Web build: unhinted WOFF2 (smaller) plus a ready-made CSS file with a size-matched fallback font
+python3 scripts/build_web.py
+echo "Done. Fonts are in $OUT/ttf, $OUT/otf, $OUT/woff2 (hinted) and $OUT/web (unhinted WOFF2 + CSS, recommended for websites)"

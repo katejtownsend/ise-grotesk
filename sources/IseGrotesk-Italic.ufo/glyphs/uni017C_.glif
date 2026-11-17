@@ -2,6 +2,8 @@
 <glyph name="uni017C" format="2">
   <advance width="540"/>
   <unicode hex="017C"/>
+  <anchor x="419" y="700" name="top"/>
+  <anchor x="270" y="0" name="bottom"/>
   <outline>
     <component base="z"/>
     <component base="dotaccent" xOffset="40.0"/>

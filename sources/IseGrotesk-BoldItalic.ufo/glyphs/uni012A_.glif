@@ -2,6 +2,8 @@
 <glyph name="uni012A" format="2">
   <advance width="390"/>
   <unicode hex="012A"/>
+  <anchor x="386" y="900" name="top"/>
+  <anchor x="195" y="0" name="bottom"/>
   <outline>
     <component base="I"/>
     <component base="macron.lc" xOffset="7.5113123340044226" yOffset="200"/>

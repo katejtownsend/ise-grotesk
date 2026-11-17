@@ -1,5 +1,5 @@
 """Release post-processing for compiled fonts: adds a STAT table (one entry per axis, this font's own style), removes Mac name
-records, and sets the head 'integer ppem' flag required for hinted fonts.
+records, sets the head 'integer ppem' flag required for hinted fonts, sets fsType to 0 (installable) and a real vendor ID.
 python scripts/postprocess.py font.ttf [font2.otf ...]   (fixes Font Bakery: no-stat, STAT_in_statics, no_mac_entries, integer_ppem_if_hinted)"""
 import os, sys
 from fontTools.ttLib import TTFont
@@ -17,4 +17,9 @@ for path in sys.argv[1:]:
     buildStatTable(f, axes_for(os.path.basename(path)), elidedFallbackName=2)    # name ID 2 = the font's subfamily name
     f["name"].names = [n for n in f["name"].names if n.platformID != 1]          # drop Mac (platform 1) name records
     if "glyf" in f: f["head"].flags |= 0x8                                       # bit 3: force integer ppem (hinted fonts)
+    os2 = f["OS/2"]
+    os2.fsType = 0                                                               # installable embedding (OFL allows free embedding)
+    if os2.achVendID.strip() in ("", "NONE"): os2.achVendID = "KTWN"             # project vendor ID instead of 'NONE'
+    for n in f["name"].names:
+        if n.nameID == 3 and ";NONE;" in str(n): n.string = str(n).replace(";NONE;", ";KTWN;")   # unique font ID carries the vendor ID
     f.save(path); print("post-processed", path)

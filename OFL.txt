@@ -1,4 +1,4 @@
-Copyright 2026 The Ise Grotesk Project Authors (https://github.com/katejtownsend/ise-grotesk)
+Copyright 2026 The Ise Grotesk Project Authors (https://github.com/katejtownsend/ise-grotesk), with Reserved Font Name "Ise Grotesk".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

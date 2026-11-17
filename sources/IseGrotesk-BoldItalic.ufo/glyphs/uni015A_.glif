@@ -2,6 +2,8 @@
 <glyph name="uni015A" format="2">
   <advance width="525"/>
   <unicode hex="015A"/>
+  <anchor x="454" y="900" name="top"/>
+  <anchor x="262" y="0" name="bottom"/>
   <outline>
     <component base="S"/>
     <component base="acute.lc" xOffset="75.01131233400443" yOffset="200"/>

@@ -1,0 +1,88 @@
+/* Ise Grotesk web fonts (unhinted). Licence: SIL OFL 1.1, Reserved Font Name 'Ise Grotesk'. https://github.com/katejtownsend/ise-grotesk */
+
+@font-face {
+  font-family: "Ise Grotesk";
+  src: url("IseGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ise Grotesk";
+  src: url("IseGrotesk-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ise Grotesk";
+  src: url("IseGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ise Grotesk";
+  src: url("IseGrotesk-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Size-matched fallback: Ise Grotesk is about 15% wider than Arial. These values keep the layout steady while the font loads.
+   (size-adjust = Ise average width / Arial average width; overrides = Ise metric / (1000 x size-adjust).) Check with a layout-shift test. */
+@font-face {
+  font-family: "Ise Fallback";
+  src: local("Arial");
+  font-weight: 400;
+  font-style: normal;
+  size-adjust: 115%;
+  ascent-override: 87%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Ise Fallback";
+  src: local("Arial Italic"), local("Arial-ItalicMT");
+  font-weight: 400;
+  font-style: italic;
+  size-adjust: 115%;
+  ascent-override: 87%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Ise Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT");
+  font-weight: 700;
+  font-style: normal;
+  size-adjust: 115%;
+  ascent-override: 87%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Ise Fallback";
+  src: local("Arial Bold Italic"), local("Arial-BoldItalicMT");
+  font-weight: 700;
+  font-style: italic;
+  size-adjust: 115%;
+  ascent-override: 87%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+}
+
+/* Use it */
+:root { font-family: "Ise Grotesk", "Ise Fallback", system-ui, sans-serif; }
+body { font-synthesis: none; }                       /* never invent a fake bold or italic */
+h1, h2, .display { line-height: 1.1; }               /* display sizes: full whimsy by default */
+body, button, input, .small {                        /* text and UI: plain forms plus clear look-alike letters */
+  font-feature-settings: "ss01", "ss02";
+  letter-spacing: 0.01em;
+}

@@ -798,7 +798,11 @@ SP.update(SPNEW)
 
 # ---- Write UFO ----
 class Gl_:
-    def __init__(self, w, u): self.width, self.unicodes = w, ([u] if u else [])
+    def __init__(self, w, u, anchors=()): self.width, self.unicodes, self.anchors = w, ([u] if u else []), list(anchors)
+COMP_META = {}          # per accented letter: base letter, marks, left bearing, ink width (read by combining_phase2)
+COMP_ANCHORS_HOOK = None
+ANCHORS_HOOK = None     # set by combining_phase2.register: (name, left, ink, slant) -> anchors
+EXTRA_FEA = ""          # extra feature code (ccmp) appended to features.fea
 
 CHARS = ("ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïñòóôõöùúûüýÿ"
          "ĀāĂăĄąĆćČčĎďĒēĖėĘęĚěĞğĪīĮįİĹĺĽľŃńŇňŌōŐőŔŕŘřŚśŞşŠšŢţŤťŪūŮůŰűŲųŴŵŶŷŸŹźŻżŽžȘșȚț")
@@ -832,6 +836,7 @@ def build_composites():
                 mkn = mk + ".lc" if (LCS != 100 and mk not in BELOW) else mk
                 parts.append((mkn, (1, 0, 0, 1, x - MC, 0 if mk in BELOW else dy)))
             comps[nm] = (uni, adv, parts)
+            COMP_META[nm] = dict(letter=letter, marks=marks, l=l, ink=ink, top=top)
         fam.setdefault(letter, []).append(name)
     return comps, fam
 
@@ -865,7 +870,8 @@ def main():
                               openTypeHheaAscender=1000, openTypeHheaDescender=-300, openTypeHheaLineGap=0,
                               openTypeOS2TypoAscender=1000, openTypeOS2TypoDescender=-300, openTypeOS2TypoLineGap=0,
                               openTypeOS2WinAscent=1100, openTypeOS2WinDescent=300, openTypeOS2Selection=[7],
-                              copyright="Copyright 2026 The Ise Grotesk Project Authors (https://github.com/katejtownsend/ise-grotesk)",
+                              openTypeOS2Type=[], openTypeOS2VendorID="KTWN",                 # fsType 0 = installable embedding; vendor ID for the Ise Grotesk project
+                              copyright="Copyright 2026 The Ise Grotesk Project Authors (https://github.com/katejtownsend/ise-grotesk), with Reserved Font Name 'Ise Grotesk'.",
                               openTypeNameDesigner="Kate Townsend", openTypeNameDesignerURL="https://github.com/katejtownsend",
                               openTypeNameLicense="This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
                               openTypeNameLicenseURL="https://openfontlicense.org",
@@ -875,13 +881,13 @@ def main():
     for name, (uni, adv, draw) in G.items():
         l, r = SP.get(name, SP.get(name.split(".")[0], (SB, SB))); ink = adv - 2 * SB; l, r = l + PAD, r + PAD
         k = math.tan(math.radians(SLANT))
-        gs.writeGlyph(name, Gl_(l + ink + r, uni),
+        gs.writeGlyph(name, Gl_(l + ink + r, uni, ANCHORS_HOOK(name, l, ink, k) if ANCHORS_HOOK else ()),
                       lambda pp, d=draw, dx=l - SB: d(TransformPen(SegmentToPointPen(pp), (1, 0, k, 1, dx, 0))))
     comps, fam = build_composites()
     for name, (uni, adv, parts) in comps.items():
         k = math.tan(math.radians(SLANT))
         parts = [(b, (a, b_, c, d_, e + k * f, f)) for b, (a, b_, c, d_, e, f) in parts]      # keep marks on the slant
-        gs.writeGlyph(name, Gl_(adv, uni), _CompDraw(parts))
+        gs.writeGlyph(name, Gl_(adv, uni, COMP_ANCHORS_HOOK(name, k) if COMP_ANCHORS_HOOK else ()), _CompDraw(parts))
     gs.writeContents(); w.writeLayerContents()
     allnames = set(G) | set(comps)
     def family(g): return [g] + fam.get(g, [])
@@ -895,9 +901,14 @@ def main():
     subs2 = [f"sub {a} by {a}.ss02;" for a in SS02_SUBS]
     feat = ("languagesystem DFLT dflt;\nlanguagesystem latn dflt;\n\n"
             "feature ss01 {\n    featureNames { name \"Logic: plain forms of the whimsy letters\"; };\n    " + "\n    ".join(subs1) + "\n} ss01;\n\n"
-            "feature ss02 {\n    featureNames { name \"Clear: distinct forms for look-alike letters\"; };\n    " + "\n    ".join(subs2) + "\n} ss02;\n")
+            "feature ss02 {\n    featureNames { name \"Clear: distinct forms for look-alike letters\"; };\n    " + "\n    ".join(subs2) + "\n} ss02;\n" + EXTRA_FEA)
     w.writeFeatures(feat)
     print(f"wrote {OUT}: {len(G)} drawn glyphs + {len(comps)} composites, {len(kern)} kerning pairs")
+
+import symbols_phase2
+symbols_phase2.register(sys.modules[__name__])           # Phase 2.1: symbols, fractions, arrows, spaces
+import combining_phase2
+combining_phase2.register(sys.modules[__name__])         # Phase 2.3: combining marks, anchors, ccmp
 
 if __name__ == "__main__":
     main()

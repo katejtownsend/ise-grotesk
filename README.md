@@ -36,4 +36,4 @@ python scripts/make_glyphs.py   # optional: python scripts/preview.py
 ```
 
 ## License
-SIL Open Font License 1.1. Add the full text as `OFL.txt` (copy from https://openfontlicense.org and fill in your name and the font name).
+SIL Open Font License 1.1, with the Reserved Font Name "Ise Grotesk": you are free to use, study, modify and redistribute the font, but a modified version must be released under a different name. The full text is in `OFL.txt`.

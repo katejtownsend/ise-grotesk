@@ -22,6 +22,8 @@
     <string>D_croat.glif</string>
     <key>E</key>
     <string>E_.glif</string>
+    <key>Eth</key>
+    <string>E_th.glif</string>
     <key>Euro</key>
     <string>E_uro.glif</string>
     <key>F</key>
@@ -66,6 +68,8 @@
     <string>S_.glif</string>
     <key>T</key>
     <string>T_.glif</string>
+    <key>Thorn</key>
+    <string>T_horn.glif</string>
     <key>U</key>
     <string>U_.glif</string>
     <key>V</key>
@@ -92,10 +96,22 @@
     <string>ae.glif</string>
     <key>ampersand</key>
     <string>ampersand.glif</string>
+    <key>approxequal</key>
+    <string>approxequal.glif</string>
+    <key>arrowdown</key>
+    <string>arrowdown.glif</string>
+    <key>arrowleft</key>
+    <string>arrowleft.glif</string>
+    <key>arrowright</key>
+    <string>arrowright.glif</string>
+    <key>arrowup</key>
+    <string>arrowup.glif</string>
     <key>asciicircum</key>
     <string>asciicircum.glif</string>
     <key>asciitilde</key>
     <string>asciitilde.glif</string>
+    <key>asciitilde.case</key>
+    <string>asciitilde.case.glif</string>
     <key>asterisk</key>
     <string>asterisk.glif</string>
     <key>at</key>
@@ -110,18 +126,30 @@
     <string>bar.glif</string>
     <key>braceleft</key>
     <string>braceleft.glif</string>
+    <key>braceleft.case</key>
+    <string>braceleft.case.glif</string>
     <key>braceright</key>
     <string>braceright.glif</string>
+    <key>braceright.case</key>
+    <string>braceright.case.glif</string>
     <key>bracketleft</key>
     <string>bracketleft.glif</string>
+    <key>bracketleft.case</key>
+    <string>bracketleft.case.glif</string>
     <key>bracketright</key>
     <string>bracketright.glif</string>
+    <key>bracketright.case</key>
+    <string>bracketright.case.glif</string>
     <key>breve</key>
     <string>breve.glif</string>
     <key>breve.lc</key>
     <string>breve.lc.glif</string>
+    <key>brokenbar</key>
+    <string>brokenbar.glif</string>
     <key>bullet</key>
     <string>bullet.glif</string>
+    <key>bullet.case</key>
+    <string>bullet.case.glif</string>
     <key>c</key>
     <string>c.glif</string>
     <key>caron</key>
@@ -130,6 +158,8 @@
     <string>caron.lc.glif</string>
     <key>cedilla</key>
     <string>cedilla.glif</string>
+    <key>cent</key>
+    <string>cent.glif</string>
     <key>circumflex</key>
     <string>circumflex.glif</string>
     <key>circumflex.lc</key>
@@ -138,10 +168,16 @@
     <string>colon.glif</string>
     <key>comma</key>
     <string>comma.glif</string>
+    <key>copyright</key>
+    <string>copyright.glif</string>
     <key>d</key>
     <string>d.glif</string>
     <key>d.ss02</key>
     <string>d.ss02.glif</string>
+    <key>dagger</key>
+    <string>dagger.glif</string>
+    <key>daggerdbl</key>
+    <string>daggerdbl.glif</string>
     <key>dcroat</key>
     <string>dcroat.glif</string>
     <key>degree</key>
@@ -150,6 +186,10 @@
     <string>dieresis.glif</string>
     <key>dieresis.lc</key>
     <string>dieresis.lc.glif</string>
+    <key>divide</key>
+    <string>divide.glif</string>
+    <key>divide.case</key>
+    <string>divide.case.glif</string>
     <key>dollar</key>
     <string>dollar.glif</string>
     <key>dotaccent</key>
@@ -164,24 +204,52 @@
     <string>e.glif</string>
     <key>eight</key>
     <string>eight.glif</string>
+    <key>eight.tf</key>
+    <string>eight.tf.glif</string>
+    <key>ellipsis</key>
+    <string>ellipsis.glif</string>
     <key>emdash</key>
     <string>emdash.glif</string>
+    <key>emdash.case</key>
+    <string>emdash.case.glif</string>
+    <key>emspace</key>
+    <string>emspace.glif</string>
     <key>endash</key>
     <string>endash.glif</string>
+    <key>endash.case</key>
+    <string>endash.case.glif</string>
+    <key>enspace</key>
+    <string>enspace.glif</string>
     <key>equal</key>
     <string>equal.glif</string>
+    <key>equal.case</key>
+    <string>equal.case.glif</string>
+    <key>eth</key>
+    <string>eth.glif</string>
     <key>exclam</key>
     <string>exclam.glif</string>
     <key>exclamdown</key>
     <string>exclamdown.glif</string>
     <key>f</key>
     <string>f.glif</string>
+    <key>figurespace</key>
+    <string>figurespace.glif</string>
     <key>five</key>
     <string>five.glif</string>
     <key>five.ss01</key>
     <string>five.ss01.glif</string>
+    <key>five.ss01.tf</key>
+    <string>five.ss01.tf.glif</string>
+    <key>five.tf</key>
+    <string>five.tf.glif</string>
     <key>four</key>
     <string>four.glif</string>
+    <key>four.tf</key>
+    <string>four.tf.glif</string>
+    <key>fourperemspace</key>
+    <string>fourperemspace.glif</string>
+    <key>fraction</key>
+    <string>fraction.glif</string>
     <key>g</key>
     <string>g.glif</string>
     <key>germandbls</key>
@@ -192,18 +260,38 @@
     <string>grave.lc.glif</string>
     <key>greater</key>
     <string>greater.glif</string>
+    <key>greater.case</key>
+    <string>greater.case.glif</string>
+    <key>greaterequal</key>
+    <string>greaterequal.glif</string>
     <key>guillemotleft</key>
     <string>guillemotleft.glif</string>
+    <key>guillemotleft.case</key>
+    <string>guillemotleft.case.glif</string>
     <key>guillemotright</key>
     <string>guillemotright.glif</string>
+    <key>guillemotright.case</key>
+    <string>guillemotright.case.glif</string>
+    <key>guilsinglleft</key>
+    <string>guilsinglleft.glif</string>
+    <key>guilsinglleft.case</key>
+    <string>guilsinglleft.case.glif</string>
+    <key>guilsinglright</key>
+    <string>guilsinglright.glif</string>
+    <key>guilsinglright.case</key>
+    <string>guilsinglright.case.glif</string>
     <key>h</key>
     <string>h.glif</string>
+    <key>hairspace</key>
+    <string>hairspace.glif</string>
     <key>hungarumlaut</key>
     <string>hungarumlaut.glif</string>
     <key>hungarumlaut.lc</key>
     <string>hungarumlaut.lc.glif</string>
     <key>hyphen</key>
     <string>hyphen.glif</string>
+    <key>hyphen.case</key>
+    <string>hyphen.case.glif</string>
     <key>i</key>
     <string>i.glif</string>
     <key>i.ss01</key>
@@ -218,6 +306,12 @@
     <string>l.ss02.glif</string>
     <key>less</key>
     <string>less.glif</string>
+    <key>less.case</key>
+    <string>less.case.glif</string>
+    <key>lessequal</key>
+    <string>lessequal.glif</string>
+    <key>logicalnot</key>
+    <string>logicalnot.glif</string>
     <key>lslash</key>
     <string>lslash.glif</string>
     <key>m</key>
@@ -226,12 +320,28 @@
     <string>macron.glif</string>
     <key>macron.lc</key>
     <string>macron.lc.glif</string>
+    <key>minus</key>
+    <string>minus.glif</string>
+    <key>minus.case</key>
+    <string>minus.case.glif</string>
+    <key>mu</key>
+    <string>mu.glif</string>
+    <key>multiply</key>
+    <string>multiply.glif</string>
+    <key>multiply.case</key>
+    <string>multiply.case.glif</string>
     <key>n</key>
     <string>n.glif</string>
+    <key>narrownbspace</key>
+    <string>narrownbspace.glif</string>
     <key>nbspace</key>
     <string>nbspace.glif</string>
     <key>nine</key>
     <string>nine.glif</string>
+    <key>nine.tf</key>
+    <string>nine.tf.glif</string>
+    <key>notequal</key>
+    <string>notequal.glif</string>
     <key>numbersign</key>
     <string>numbersign.glif</string>
     <key>o</key>
@@ -242,6 +352,14 @@
     <string>ogonek.glif</string>
     <key>one</key>
     <string>one.glif</string>
+    <key>one.tf</key>
+    <string>one.tf.glif</string>
+    <key>onehalf</key>
+    <string>onehalf.glif</string>
+    <key>onequarter</key>
+    <string>onequarter.glif</string>
+    <key>onesuperior</key>
+    <string>onesuperior.glif</string>
     <key>ordfeminine</key>
     <string>ordfeminine.glif</string>
     <key>ordmasculine</key>
@@ -252,16 +370,34 @@
     <string>p.glif</string>
     <key>p.ss02</key>
     <string>p.ss02.glif</string>
+    <key>paragraph</key>
+    <string>paragraph.glif</string>
     <key>parenleft</key>
     <string>parenleft.glif</string>
+    <key>parenleft.case</key>
+    <string>parenleft.case.glif</string>
     <key>parenright</key>
     <string>parenright.glif</string>
+    <key>parenright.case</key>
+    <string>parenright.case.glif</string>
     <key>percent</key>
     <string>percent.glif</string>
     <key>period</key>
     <string>period.glif</string>
+    <key>periodcentered</key>
+    <string>periodcentered.glif</string>
+    <key>periodcentered.case</key>
+    <string>periodcentered.case.glif</string>
     <key>plus</key>
     <string>plus.glif</string>
+    <key>plus.case</key>
+    <string>plus.case.glif</string>
+    <key>plusminus</key>
+    <string>plusminus.glif</string>
+    <key>plusminus.case</key>
+    <string>plusminus.case.glif</string>
+    <key>punctuationspace</key>
+    <string>punctuationspace.glif</string>
     <key>q</key>
     <string>q.glif</string>
     <key>q.ss02</key>
@@ -272,6 +408,8 @@
     <string>questiondown.glif</string>
     <key>quotedbl</key>
     <string>quotedbl.glif</string>
+    <key>quotedblbase</key>
+    <string>quotedblbase.glif</string>
     <key>quotedblleft</key>
     <string>quotedblleft.glif</string>
     <key>quotedblright</key>
@@ -280,22 +418,34 @@
     <string>quoteleft.glif</string>
     <key>quoteright</key>
     <string>quoteright.glif</string>
+    <key>quotesinglbase</key>
+    <string>quotesinglbase.glif</string>
     <key>quotesingle</key>
     <string>quotesingle.glif</string>
     <key>r</key>
     <string>r.glif</string>
+    <key>registered</key>
+    <string>registered.glif</string>
     <key>ring</key>
     <string>ring.glif</string>
     <key>ring.lc</key>
     <string>ring.lc.glif</string>
     <key>s</key>
     <string>s.glif</string>
+    <key>section</key>
+    <string>section.glif</string>
     <key>semicolon</key>
     <string>semicolon.glif</string>
     <key>seven</key>
     <string>seven.glif</string>
+    <key>seven.tf</key>
+    <string>seven.tf.glif</string>
     <key>six</key>
     <string>six.glif</string>
+    <key>six.tf</key>
+    <string>six.tf.glif</string>
+    <key>sixperemspace</key>
+    <string>sixperemspace.glif</string>
     <key>slash</key>
     <string>slash.glif</string>
     <key>space</key>
@@ -304,14 +454,32 @@
     <string>sterling.glif</string>
     <key>t</key>
     <string>t.glif</string>
+    <key>thinspace</key>
+    <string>thinspace.glif</string>
+    <key>thorn</key>
+    <string>thorn.glif</string>
     <key>three</key>
     <string>three.glif</string>
+    <key>three.tf</key>
+    <string>three.tf.glif</string>
+    <key>threeperemspace</key>
+    <string>threeperemspace.glif</string>
+    <key>threequarters</key>
+    <string>threequarters.glif</string>
+    <key>threesuperior</key>
+    <string>threesuperior.glif</string>
     <key>tilde</key>
     <string>tilde.glif</string>
     <key>tilde.lc</key>
     <string>tilde.lc.glif</string>
+    <key>trademark</key>
+    <string>trademark.glif</string>
     <key>two</key>
     <string>two.glif</string>
+    <key>two.tf</key>
+    <string>two.tf.glif</string>
+    <key>twosuperior</key>
+    <string>twosuperior.glif</string>
     <key>u</key>
     <string>u.glif</string>
     <key>underscore</key>
@@ -626,6 +794,34 @@
     <string>uni021A_.glif</string>
     <key>uni021B</key>
     <string>uni021B_.glif</string>
+    <key>uni0300</key>
+    <string>uni0300.glif</string>
+    <key>uni0301</key>
+    <string>uni0301.glif</string>
+    <key>uni0302</key>
+    <string>uni0302.glif</string>
+    <key>uni0303</key>
+    <string>uni0303.glif</string>
+    <key>uni0304</key>
+    <string>uni0304.glif</string>
+    <key>uni0306</key>
+    <string>uni0306.glif</string>
+    <key>uni0307</key>
+    <string>uni0307.glif</string>
+    <key>uni0308</key>
+    <string>uni0308.glif</string>
+    <key>uni030A</key>
+    <string>uni030A_.glif</string>
+    <key>uni030B</key>
+    <string>uni030B_.glif</string>
+    <key>uni030C</key>
+    <string>uni030C_.glif</string>
+    <key>uni0326</key>
+    <string>uni0326.glif</string>
+    <key>uni0327</key>
+    <string>uni0327.glif</string>
+    <key>uni0328</key>
+    <string>uni0328.glif</string>
     <key>v</key>
     <string>v.glif</string>
     <key>w</key>
@@ -644,5 +840,11 @@
     <string>zero.glif</string>
     <key>zero.ss02</key>
     <string>zero.ss02.glif</string>
+    <key>zero.ss02.tf</key>
+    <string>zero.ss02.tf.glif</string>
+    <key>zero.tf</key>
+    <string>zero.tf.glif</string>
+    <key>zerowidthspace</key>
+    <string>zerowidthspace.glif</string>
   </dict>
 </plist>
