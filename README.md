@@ -2,7 +2,7 @@
 
 A geometric sans-serif inspired by the design principles of Walter Gropius and the Bauhaus: function over ornament, geometric primitives, and a modular grid.
 
-> Status: **v0.1.0 release candidate (draft: A-Z, a-z, 0-9, punctuation, symbols, ~150 accented letters for Western European and Latin Extended-A languages, ss01 "Logic" and ss02 "Clear" sets)**. Four styles: Regular, Italic, Bold and Bold Italic, in TTF, OTF and WOFF2.
+> Status: **v0.2.0 release candidate (draft: A-Z, a-z, 0-9, punctuation, symbols, fractions, arrows, combining marks, ~150 accented letters for Western European and Latin Extended-A languages, Ð ð Þ þ, ss01 "Logic" and ss02 "Clear" sets, tabular figures `tnum` and case-sensitive forms `case`)**. Four styles: Regular, Italic, Bold and Bold Italic, in TTF, OTF and WOFF2, plus a lighter unhinted WOFF2 set in `release/web` for websites.
 
 **Accessibility:** Ise Grotesk is a *display* face (24pt and up). Turn on `ss02` (Clear) for tailed l, slab I, slashed zero and spurred b d p q. Accented capitals sit above cap height, so use generous line spacing. Check text/background contrast (WCAG 4.5:1 minimum).
 

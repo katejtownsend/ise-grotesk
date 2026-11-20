@@ -866,7 +866,7 @@ def main():
     info = type("I", (), dict(familyName="Ise Grotesk", styleName=STYLE, italicAngle=-SLANT,
                               styleMapFamilyName="Ise Grotesk", styleMapStyleName={"Regular": "regular", "Italic": "italic", "Bold": "bold", "Bold Italic": "bold italic"}[STYLE],
                               openTypeOS2WeightClass=700 if "Bold" in STYLE else 400, unitsPerEm=UPM, ascender=1000, descender=-300,
-                              capHeight=CAP, xHeight=XH, versionMajor=0, versionMinor=100,
+                              capHeight=CAP, xHeight=XH, versionMajor=0, versionMinor=200,
                               openTypeHheaAscender=1000, openTypeHheaDescender=-300, openTypeHheaLineGap=0,
                               openTypeOS2TypoAscender=1000, openTypeOS2TypoDescender=-300, openTypeOS2TypoLineGap=0,
                               openTypeOS2WinAscent=1100, openTypeOS2WinDescent=300, openTypeOS2Selection=[7],
