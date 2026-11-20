@@ -118,8 +118,8 @@ def H_meeting(p):
     rect(p, SB + S, CAP / 2 - S / 2 + OFF / 2, cx + 10, CAP / 2 + S / 2 + OFF / 2)       # left half, higher
     rect(p, cx - 10, CAP / 2 - S / 2 - OFF / 2, SB + W - S, CAP / 2 + S / 2 - OFF / 2)   # right half, lower
 def H_gap(p):
-    """Hannover 1923, alternative: two bars that stop a hair short of each other (GAP units) in the middle."""
-    W, GAP = 500, 28; cx = SB + W / 2; stem(p, SB); stem(p, SB + W - S)
+    """Hannover 1923: two bars that stop a hair short of each other (GAP units) in the middle."""
+    W = 500; GAP = 56 + 0.4 * (S - 100); cx = SB + W / 2; stem(p, SB); stem(p, SB + W - S)      # 56 at Regular, 76 at Bold: wide enough to show at 24 px; was 28
     rect(p, SB + S, CAP / 2 - S / 2, cx - GAP / 2, CAP / 2 + S / 2); rect(p, cx + GAP / 2, CAP / 2 - S / 2, SB + W - S, CAP / 2 + S / 2)
 glyph("H", 0x48, 500, (H_gap if H_STYLE == "gap" else H_meeting) if WHIMSY["H"] else H_plain)
 

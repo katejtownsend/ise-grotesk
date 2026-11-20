@@ -20,15 +20,15 @@
     </contour>
     <contour>
       <point x="298.45305445925607" y="275.0" type="line"/>
-      <point x="384.45305445925607" y="275.0" type="line"/>
-      <point x="416.3365387097594" y="425.0" type="line"/>
+      <point x="360.45305445925607" y="275.0" type="line"/>
+      <point x="392.3365387097594" y="425.0" type="line"/>
       <point x="330.3365387097594" y="425.0" type="line"/>
     </contour>
     <contour>
-      <point x="412.45305445925607" y="275.0" type="line"/>
+      <point x="436.45305445925607" y="275.0" type="line"/>
       <point x="498.45305445925607" y="275.0" type="line"/>
       <point x="530.3365387097595" y="425.0" type="line"/>
-      <point x="444.3365387097594" y="425.0" type="line"/>
+      <point x="468.3365387097594" y="425.0" type="line"/>
     </contour>
   </outline>
 </glyph>
